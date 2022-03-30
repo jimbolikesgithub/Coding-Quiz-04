@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="James Edwards">
+
+    <link rel="stylesheet" href="./quiz.css">
+
+    <title>Coding Quiz (99.9% FAIL)</title>
+</head>
+
+<!-- Body -->
+<body>
+
+    <!-- Timer -->
+    <header id="timer_container">
+        <h2 id="timer"></h2>
+    </header>
+
+    <!-- Start Screen Container -->
+    <section id="start_container" class="">
+        <h1>Welcome to the HARDEST Quiz on the planet.</h1>
+        <p>Let's hope you can survive...</p>
+        <button id="start_quiz" class="start-btn start-and-next-btn">Start</button>
+    </section>
+
+    <!-- Buttons Container -->
+    <section id="btn_container" class="hidden"> <!-- Hides the parent container styling of the actual box -->
+        <figure class="q-container"> <!-- Hides the Question and Answer buttons -->
+            <span id="question" class="question"></span>
+            <div id="answer-btns" class="answer-container">
+                <button id="a-text" class="answer-btn btn"></button>
+                <button id="b-text" class="answer-btn btn"></button>
+                <button id="c-text" class="answer-btn btn"></button>
+                <button id="d-text" class="answer-btn btn"></button>
+            </div>
+        </figure>
+        <div class="next_container"> 
+            <button id="next-button" class="next-btn start-and-next-btn">Next</button> <!-- Hides the Next button -->
+        </div>
+    </section>
+
+    <!-- Final Score + Initials -->
+    <section id="score_container" class="hidden">
+        <h1>Quiz OVER</h1>
+        <!-- YOUR SCORE HERE -->
+        <div class="your-score">SCORE HERE</div>
+        <p>You either did really well, or really NOT well! Hahahaha!</p>
+        <form class="submit-form">
+            <label for="submit">Your name:</label>
+            <input type="text" id="submit" name="submit" placeholder="Jimbo The Zoom Lord">
+            <input id="button" type="submit" value="Submit">
+        </form>
+    </section>
+
+     <!-- Highscores/Leaderboard -->
+     <footer id="leaderboard_container" class="hidden">
+        <h1>Leaderboard</h1>
+        <!-- FOR INPUTTED NAME -->
+        <div class="new-name">INPUTTED NAME</div>
+        <figure>
+            <button>Back</button>
+            <button>Clear Leaderboard</button>
+        </figure>
+    </footer>
+
+    <!-- JS Script -->
+    <script src="./script.js"></script>
+</body>
+</html>
